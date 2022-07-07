@@ -1,13 +1,17 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { ButtonData } from './GrillandChillButtonData'
+import { motion } from 'framer-motion'
 
 const GrillandChill = () => {
 
     const [category, setCategory] = useState('clear filter')
 
     return (
-        <main className="ember-house-home-main">
+        <motion.main
+            whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+            transition={{ duration: 1 }}
+            className="ember-house-home-main">
             <div className='home-page-headers'>
                 <h2>Grill and Chill</h2>
                 <h4>Come and see what Ember House has to offer!</h4>
@@ -15,7 +19,7 @@ const GrillandChill = () => {
             <div className='category-btns'>
                 {
                     ButtonData.map((button) => (
-                        <button onClick={
+                        <button key={button.title} onClick={
                             () => setCategory(button.title)
                         }>{button.title}</button>
                     ))
@@ -65,7 +69,9 @@ const GrillandChill = () => {
             }
             {
                 category === 'clear filter' && (
-                    <div className='menu-preview-section'>
+                    <div
+
+                        className='menu-preview-section'>
 
                         <img src="/entrees.png" alt="entrees" />
                         <p>
@@ -84,7 +90,7 @@ const GrillandChill = () => {
                     </div>
                 )
             }
-        </main >
+        </motion.main>
     )
 }
 

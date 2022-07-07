@@ -2,7 +2,7 @@
 @media screen and (min-width: 1120px) {
     .ember-house-home-main {
         background-color: #0C120C;
-        padding: 60px 20px 80px;
+        padding: 80px 20px 80px;
 
     }
 
@@ -51,7 +51,7 @@
     /* Menu Preview Section */
 
     .menu-preview {
-        padding-top: 60px;
+        padding-top: 40px;
         display:flex;
         flex-direction: column;
         justify-content: center;
