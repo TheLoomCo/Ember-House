@@ -1,0 +1,59 @@
+/* Navigation Styling */
+
+@media screen and (min-width: 1025px) {
+
+    .navbar-style-wrapper {
+        padding: 20px 0px;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1600px;
+        width: 100%;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .nav-logo {
+        position: relative;
+    }
+
+    .nav-logo img {
+        width: 120px;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+        font-family: 'Montserrat';
+        position: relative;
+        font-size: 1.3rem;
+    }
+
+    .nav-list li a {
+        color: #fff;
+        position: relative;
+    }
+
+    .nav-list li a.active::before {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 2px;
+        width: 20%;
+        background-color: #fff;
+        height: 2px;
+        transition: width 0.5s ease;
+    }
+
+    .nav-list li a.active:hover::before {
+        width: 50%;
+    }
+}
