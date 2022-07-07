@@ -5,7 +5,7 @@ footer {
     color: #fff;
     padding: 40px 10px;
     max-width: 1800px;
-   
+    font-family: 'OpenSauceSans';
     margin: 0px auto;
 }
 
@@ -50,6 +50,21 @@ footer h2 {
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
-    font-size: 1.2rem;
     padding-right: 40px;   
+}
+
+.business-hours h6 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.business-hours .day {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    font-family: 'OpenSauceSans';
+    font-weight: 500;
+}
+
+.business-hours .time {
+    font-size: 0.9rem;
 }

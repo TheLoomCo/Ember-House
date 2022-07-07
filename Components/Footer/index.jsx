@@ -20,19 +20,19 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className='business-hours'>
-                        <p>Hours of Operation:</p>
+                        <h6>Hours of Operation:</h6>
 
                         <div>
-                            <p>Monday - Friday</p>
-                            <p>10am-11pm</p>
+                            <p className='day'>Monday - Friday</p>
+                            <p className='time'>10am-11pm</p>
                         </div>
                         <div>
-                            <p>Saturday </p>
-                            <p>10am-12am</p>
+                            <p className='day'>Saturday </p>
+                            <p className='time'>10am-12am</p>
                         </div>
                         <div>
-                            <p>Sunday </p>
-                            <p>11am-6pm</p>
+                            <p className='day'>Sunday </p>
+                            <p className='time'>11am-6pm</p>
                         </div>
                     </div>
                 </div>
