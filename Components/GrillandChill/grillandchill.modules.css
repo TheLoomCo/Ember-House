@@ -50,6 +50,26 @@
 
     /* Menu Preview Section */
 
+    .menu-preview {
+        padding-top: 60px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+    }
+
+    .menu-preview h2 {
+        font-size: 4rem;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: #fff;
+    }
+
+    .menu-preview img {
+        width: 550px;
+    }
+
     .menu-preview-section {
         max-width: 1400px;
         margin: 0px auto;
