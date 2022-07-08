@@ -37,21 +37,20 @@ const Navigation = () => {
                         <BsTelephoneFill />
                         <span>(123)-456-7890</span>
                     </div>
-                    {
-                        clientWindowWidth
-                            ?
-                            <Link href="/">
-                                <a className="nav-logo">
-                                    <img className="nav-logo" src={clientWindowHeight > 50 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" width="150" height="80" />
-                                </a>
-                            </Link>
-                            :
-                            <Link href="/">
-                                <a className="nav-logo">
-                                    <img className="nav-logo" src='/logo-white.png' alt="Ember House" width="150" height="80" />
-                                </a>
-                            </Link>
-                    }
+
+
+                    <Link href="/">
+                        <a className="nav-logo-large-screen">
+                            <img className="nav-logo-large-screen" src={clientWindowHeight > 50 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" width="150" height="70" />
+                        </a>
+                    </Link>
+
+                    <Link href="/">
+                        <a className="nav-logo-small-screen">
+                            <img className="nav-logo-small-screen" src='/logo-white.png' alt="Ember House" width="150" height="80" />
+                        </a>
+                    </Link>
+
                     <button id="mobileMenuTrigger" className={` ${toggleMobileMenu ? 'menuToggle' : ''}`} aria-expanded={toggleMobileMenu ? 'true' : 'false'} aria-controls="navigationLinks"
                         title="Open and Close Navigation" onClick={() => setToggleMobileMenu(!toggleMobileMenu)}>
                         <div className="line1"></div>

@@ -9,14 +9,14 @@ const GrillandChill = () => {
 
 
     return (
-        <motion.main
+        <motion.section
             whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
             transition={{ duration: 1 }}
-            className="ember-house-home-main"
+            className="grill-and-chill"
             id="menu">
-            <div className='home-page-headers'>
+            <div className='grill-and-chill-headers'>
                 <h2 className='text-gradient'>Grill and Chill</h2>
-                <h3>Come and see what Ember House has to offer!</h3>
+                <h3>Come and see what <br /> Ember House has to offer!</h3>
             </div>
             <div className='category-btns'>
                 {
@@ -57,27 +57,32 @@ const GrillandChill = () => {
             {
                 category === 'clear filter' && (
                     <div
-
                         className='menu-preview-section'>
 
-                        <img src="/1.avif" alt="entrees" height="250" width="444" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
-                        </p>
+                        <div className='menu-preview-food'>
+                            <img src="/1.avif" alt="entrees" height="250" width="444" />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
+                            </p>
+                        </div>
 
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
-                        </p>
-                        <img src="/18.avif" alt="cocktails" height="250" width="444" />
+                        <div className='menu-preview-drinks'>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
+                            </p>
+                            <img src="/18.avif" alt="cocktails" height="250" width="444" />
 
-                        <img src="/20.avif" alt="entertainment" height="250" width="444" />
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
-                        </p>
+                        </div>
+                        <div className='menu-preview-entertainment'>
+                            <img src="/20.avif" alt="entertainment" height="250" width="444" />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
+                            </p>
+                        </div>
                     </div>
                 )
             }
-        </motion.main>
+        </motion.section>
     )
 }
 

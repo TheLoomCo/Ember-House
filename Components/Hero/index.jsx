@@ -5,7 +5,7 @@ const HeroSection = () => {
     return (
         <section id="heroSection" className="hero-section">
             <div className="parallax"></div>
-            {/* <img className='parallax' src="/ember-house-square.png" alt="" /> */}
+            <img className='mobile-img' src="/hero-banner.avif" alt="" />
             <div className="overlay"></div>
             <Navigation />
             <div className="hero-cta">

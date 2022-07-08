@@ -1,5 +1,8 @@
 export const ReservationQuantity = [
     {
+        quantity: 'Number of'
+    },
+    {
         quantity: 2
     },
     {
@@ -29,6 +32,9 @@ export const ReservationQuantity = [
 ];
 
 export const ReservationTime = [
+    {
+        time: 'Choose your time'
+    },
     {
         time: '5:00pm'
     },

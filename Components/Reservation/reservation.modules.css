@@ -8,19 +8,19 @@
 }
 
 .form-styling-wrapper {
-    margin: 80px 0px;
+    margin: 80px 0px 135px;
     padding: 40px;
     background-color: #d9d9d91c;
-    scroll-margin-top: 250px;
+    scroll-margin-top: 160px;
 }
 
 .form-styling-wrapper.preview {
-    animation: preview 2s ease forwards;
+    animation: preview 1s ease forwards;
 }
 
 @keyframes preview {
     from {
-        max-height: 300px;
+        max-height: 500px;
     }
     
     to {
@@ -37,35 +37,37 @@
     align-items: center;
     justify-content: center;
     max-width: 800px;
-    margin: 0px auto 20px;
+    margin: 0px auto 0px;
 }
 
 .reservation-form h2 {
     font-family: 'Montserrat';
     font-weight:300;
     color: #fff;
-    font-size: 4rem;
+    font-size: clamp(1.6rem, 8vw, 4rem);
+    text-align: center;
 }
 
 .form-inputs-wrapper {
     display: flex;
-    column-gap: 20px;
-
+    flex-direction: column;
+    row-gap: 12px;
+    width: 200px;
 }
 
+.calendar,
 .quantity,
-.calendar {
+.time {
     position: relative;
 }
 
-.quantity {
+ /* USER ICON */
+    
+ .quantity  {
     display: flex;
     align-items: center;
 }
-
-/* USER ICON */
-
-.user-icon {
+.quantity .user-icon {
     position: absolute;
     font-size: 1rem;
     color: #000;
@@ -74,7 +76,7 @@
 
 .quantity select {
     padding: 8px 0px 8px 30px;
-    width: 150px;
+    width: 100%;
     background-color: #fff;
     border: none;
         border-radius: 6px;
@@ -104,7 +106,7 @@
         border-radius: 6px;
 
     border: none;
-    width: 150px;
+    width: 100%;
     font-family: 'OpenSauceSans';
     cursor: pointer;
 
@@ -116,7 +118,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
 }
 
 .time-icon {
@@ -128,7 +129,7 @@
     padding: 8px 0px 8px 30px;
     border-radius: 6px;
     border: none;
-    width: 150px;
+    width: 100%;
     font-family: 'OpenSauceSans';
     cursor: pointer;
 
@@ -149,7 +150,7 @@
 
 .preview-reservation {
     margin: 0px auto;
-    padding: 40px 20px;
+    padding: 40px 30px;
     background-color: #0C120C;
     color: #fff;
     border-radius: 16px;
@@ -158,6 +159,7 @@
     align-items: center;
     row-gap: 20px;
     animation: previewReservation 1s ease forwards;
+    outline: solid;
 }
 
 @keyframes previewReservation {
@@ -168,5 +170,156 @@
         opacity: 1;
     }
 }
+
+.preview-reservation p {
+    text-align: center;
+    width: 100%;
+}
+
+.preview-reservation p span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+
+@media screen and (min-width: 1025px) {
+    .form-styling-wrapper {
+        margin: 80px 0px 140px;
+        scroll-margin-top: 340px;
+    }
+    
+    .form-styling-wrapper.preview {
+        animation: preview 2s ease forwards;
+    }
+    
+    @keyframes preview {
+        from {
+            max-height: 300px;
+        }
+        
+        to {
+            max-height: 800px;
+        }
+    }
+
+    
+    .form-inputs-wrapper {
+        flex-direction: row;
+        row-gap: 0px;
+        column-gap: 20px;
+        width: auto;
+    }
+    
+    /* USER ICON */
+    
+    .quantity .user-icon {
+        display: flex;
+        align-items: center;
+    }
+    .user-icon .user-icon {
+        position: absolute;
+        font-size: 1rem;
+        color: #000;
+        left: 10px;
+    }
+    
+    .quantity select {
+        padding: 8px 0px 8px 30px;
+        width: 150px;
+        background-color: #fff;
+        border: none;
+            border-radius: 6px;
+    
+        font-family: 'OpenSauceSans';
+        cursor: pointer;
+    
+    }
+    
+    /* CALENDAR ICON */
+    
+    .calendar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .calendar-icon {
+        position: absolute;
+        font-size: 1rem;
+        color: #000;
+        left: 10px;
+    }
+    
+    .calendar input {
+        padding: 8px 0px 8px 30px;
+            border-radius: 6px;
+    
+        border: none;
+        width: 150px;
+        font-family: 'OpenSauceSans';
+        cursor: pointer;
+    
+    }
+    
+    /* TIME ICON */
+    
+    .time {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .time-icon {
+        position: absolute;
+        left: 10px;
+    }
+    
+    .time select {
+        padding: 8px 0px 8px 30px;
+        border-radius: 6px;
+        border: none;
+        width: 150px;
+        font-family: 'OpenSauceSans';
+        cursor: pointer;
+    
+    }
+    
+    .reservation-form button {
+        width: auto;
+    }
+    
+    .preview-reservation {
+        margin: 0px auto;
+        padding: 40px 20px;
+        background-color: #0C120C;
+        color: #fff;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        animation: previewReservation 1s ease forwards;
+    }
+    
+    @keyframes previewReservation {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    .preview-reservation p br {
+        display: none;
+    }
+    
+    .preview-reservation p span {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+}
+
 
 

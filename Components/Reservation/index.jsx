@@ -48,7 +48,7 @@ const Reservation = () => {
                         <select value={quantity} onChange={(e) => setQuantity(e.target.value)}>
                             {
                                 ReservationQuantity.map((item) => (
-                                    <option key={item?.quantity}>{item?.quantity} people</option>
+                                    <option key={item?.quantity}>{item?.quantity} guests</option>
                                 ))
                             }
                         </select>
@@ -84,10 +84,9 @@ const Reservation = () => {
                 {
                     quantity && date && time && (
                         <div className='preview-reservation'>
-                            <p>Your Selected Number of Patrons is: {quantity}</p>
-                            <p>Your Selected Date is: {date}</p>
-                            <p>Your Selected Time is: {time}</p>
-                            <span>Complete Reservation? </span>
+                            <p>Your Selected Number of Guests is: <br /> <span>{quantity}</span></p>
+                            <p>Your Selected Date is: <br /> <span>{date}</span></p>
+                            <p>Your Selected Time is: <br /> <span>{time}</span></p>
                             <button type="submit" onClick={(e) => handleSubmit(e)}>Submit Reservation</button>
                             <span></span>
                         </div>

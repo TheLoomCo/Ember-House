@@ -1,7 +1,25 @@
 import React, { useState } from 'react'
+import { toast, ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 
 const Footer = () => {
     const [email, setEmail] = useState("")
+
+    const handleSignup = (e) => {
+        e.preventDefault();
+        toast.success('Thanks for Signing Up!', {
+            position: "bottom-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            progress: undefined,
+        });
+
+
+        setEmail("");
+    }
     return (
         <div id="contact" className='footer-wrapper'>
             <footer>
@@ -23,10 +41,13 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='newsletter'>
-                        <fieldset>
-                            <label htmlFor='email'>Signup for our Newsletter</label>
-                            <input id="email" type="email" placeholder='Stay up to date!' value={email} onChange={() => setEmail(e.target.value)} />
-                        </fieldset>
+                        <form>
+                            <fieldset>
+                                <label htmlFor='email'>Signup for our Newsletter</label>
+                                <input id="email" type="email" placeholder='Stay up to date!' value={email} onChange={(e) => setEmail(e.target.value)} />
+                            </fieldset>
+                            <button type="submit" value={email} onClick={(e) => handleSignup(e)}>Sign Up!</button>
+                        </form>
                     </div>
                     <div className='business-hours'>
                         <h4>Hours of Operation:</h4>
@@ -44,7 +65,9 @@ const Footer = () => {
                             <p className='available-hours'>11am - 6pm</p>
                         </div>
                     </div>
+                    <span className='copyright'>Copyright &copy; {new Date().getFullYear()} LoomCo & ALStudio</span>
                 </div>
+
             </footer>
         </div>
     )
