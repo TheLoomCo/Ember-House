@@ -33,7 +33,7 @@ const GrillandChill = () => {
                 category === "hors d'oeuvres & entrees" && (
                     <div className='menu-preview'>
                         <h2>Hors D'oeuvres & Entrees</h2>
-                        <a onClick={handleDownload} href="/hors-doeuvres-entrees.avif" download="Hors D'ouevres and Entrees"><img src="/hors-doeuvres-entrees.avif" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
+                        <a onClick={handleDownload} href="/hors-doeuvres-entrees.avif" download="Hors D'ouevres and Entrees"><img src="/webp/hors-doeuvres-entrees.webp" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
                     </div>
                 )
             }
@@ -42,7 +42,7 @@ const GrillandChill = () => {
                 category === "desserts and sides" && (
                     <div className='menu-preview'>
                         <h2>Desserts & Sides</h2>
-                        <a href="/desserts-sides.avif" download="Dessert and Sides"><img src="/desserts-sides.avif" alt="Desserts and Sides" height="1000" width="773" /></a>
+                        <a href="/desserts-sides.avif" download="Dessert and Sides"><img src="/webp/desserts-sides.webp" alt="Desserts and Sides" height="1000" width="773" /></a>
                     </div>
                 )
             }
@@ -50,7 +50,7 @@ const GrillandChill = () => {
                 category === "drinks / cocktails / wines" && (
                     <div className='menu-preview'>
                         <h2>Drinks / Cocktails / Wines</h2>
-                        <a href="/drinks.avif" download="Drinks"><img src="/drinks.avif" alt="Drinks, Cocktails, & Wine" height="1000" width="773" /></a>
+                        <a href="/drinks.avif" download="Drinks"><img src="/webp/drinks.webp" alt="Drinks, Cocktails, & Wine" height="1000" width="773" /></a>
                     </div>
                 )
             }
@@ -60,7 +60,7 @@ const GrillandChill = () => {
                         className='menu-preview-section'>
 
                         <div className='menu-preview-food'>
-                            <img src="/1.avif" alt="entrees" height="250" width="444" />
+                            <img src="/webp/1.webp" alt="entrees" height="250" width="444" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
                             </p>
@@ -70,11 +70,11 @@ const GrillandChill = () => {
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
                             </p>
-                            <img src="/18.avif" alt="cocktails" height="250" width="444" />
+                            <img src="/webp/18.webp" alt="cocktails" height="250" width="444" />
 
                         </div>
                         <div className='menu-preview-entertainment'>
-                            <img src="/20.avif" alt="entertainment" height="250" width="444" />
+                            <img src="/webp/20.webp" alt="entertainment" height="250" width="444" />
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
                             </p>

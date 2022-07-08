@@ -5,7 +5,7 @@ const HeroSection = () => {
     return (
         <section id="heroSection" className="hero-section">
             <div className="parallax"></div>
-            <img className='mobile-img' src="/hero-banner.avif" alt="" />
+            <img className='mobile-img' src="/webp/hero-banner.webp" alt="Ember Grill" />
             <div className="overlay"></div>
             <Navigation />
             <div className="hero-cta">

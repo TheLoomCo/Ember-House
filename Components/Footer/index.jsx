@@ -26,7 +26,7 @@ const Footer = () => {
                 <h2>Contact Us</h2>
                 <div className='footer-content-container'>
                     <div className='business-location-info'>
-                        <img src="/map.png" alt="map" />
+                        <img src="/webp/map.webp" alt="map" />
                         <div>
                             <p className='business-title'>
                                 Ember House

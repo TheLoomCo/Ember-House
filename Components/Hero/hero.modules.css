@@ -83,7 +83,7 @@
     }
     
     .parallax {
-        background-image: url("/hero-banner.avif");
+        background-image: url("/webp/hero-banner.webp");
         min-height: 100vh;
         background-attachment: fixed;
         background-position: bottom;
