@@ -24,15 +24,15 @@ const Footer = () => {
 
                         <div>
                             <p className='day'>Monday - Friday</p>
-                            <p className='time'>10am - 11pm</p>
+                            <p className='available-hours'>10am - 11pm</p>
                         </div>
                         <div>
                             <p className='day'>Saturday </p>
-                            <p className='time'>10am - 12am</p>
+                            <p className='available-hours'>10am - 12am</p>
                         </div>
                         <div>
                             <p className='day'>Sunday </p>
-                            <p className='time'>11am - 6pm</p>
+                            <p className='available-hours'>11am - 6pm</p>
                         </div>
                     </div>
                 </div>
