@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Footer from '../Components/Footer'
 import GrillandChill from '../Components/GrillandChill'
 import HeroSection from '../Components/Hero'
+import Reservation from '../Components/Reservation'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       {/* Home Page */}
       <HeroSection />
       <GrillandChill />
+      <Reservation />
       <Footer />
     </>
   )

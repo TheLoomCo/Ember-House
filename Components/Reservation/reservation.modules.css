@@ -1,0 +1,129 @@
+.form-styling-wrapper {
+    margin: 80px 0px;
+    padding: 40px;
+    background-color: #d9d9d91c;
+}
+
+.reservation-form {
+    padding: 10px;
+    position: relative;
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+.reservation-form h2 {
+    font-family: 'Montserrat';
+    font-weight:300;
+    color: #fff;
+    font-size: 4rem;
+}
+
+.form-inputs-wrapper {
+    display: flex;
+    column-gap: 20px;
+
+}
+
+.quantity,
+.calendar {
+    position: relative;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+/* USER ICON */
+
+.user-icon {
+    position: absolute;
+    font-size: 1rem;
+    color: #000;
+    left: 10px;
+}
+
+.quantity select {
+    padding: 8px 0px 8px 30px;
+    width: 150px;
+    background-color: #fff;
+    border: none;
+        border-radius: 6px;
+
+    font-family: 'OpenSauceSans';
+    cursor: pointer;
+
+}
+
+/* CALENDAR ICON */
+
+.calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-icon {
+    position: absolute;
+    font-size: 1rem;
+    color: #000;
+    left: 10px;
+}
+
+.calendar input {
+    padding: 8px 0px 8px 30px;
+        border-radius: 6px;
+
+    border: none;
+    width: 150px;
+    font-family: 'OpenSauceSans';
+    cursor: pointer;
+
+}
+
+/* TIME ICON */
+
+.time {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.time-icon {
+    position: absolute;
+    left: 10px;
+}
+
+.time select {
+    padding: 8px 0px 8px 30px;
+        border-radius: 6px;
+
+    border: none;
+    width: 150px;
+    font-family: 'OpenSauceSans';
+    cursor: pointer;
+
+}
+
+.reservation-form button {
+    padding: 8px 10px;
+    width: 180px;
+    letter-spacing: 0.5px;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'OpenSauceSans';
+    font-size: 0.9rem;
+    cursor:pointer;
+
+
+}
+
+
