@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { FaUser } from 'react-icons/fa'
 import { BiCalendar } from 'react-icons/bi';
-import { AiFillClockCircle } from 'react-icons/ai';
+import { AiFillClockCircle, AiOutlineNumber } from 'react-icons/ai';
 import { ReservationQuantity, ReservationTime } from './ReservationData'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Reservation = () => {
+    const [name, setName] = useState("")
     const [quantity, setQuantity] = useState(undefined);
     const [date, setDate] = useState(undefined);
     const [time, setTime] = useState(undefined);
@@ -38,13 +39,18 @@ const Reservation = () => {
     }
 
     return (
-        <div id="reservation" className={quantity && date && time ? 'form-styling-wrapper preview' : 'form-styling-wrapper'}>
+        <div id="reservation" className={name && quantity && date && time ? 'form-styling-wrapper preview' : 'form-styling-wrapper'}>
             <form className='reservation-form'>
                 <h2>Book a Reservation</h2>
 
                 <div className='form-inputs-wrapper'>
-                    <div className='quantity'>
+                    <div className='name'>
                         <FaUser className='user-icon' />
+                        <input type="string" placeholder='Name for Reservation' value={name} onChange={(e) => setName(e.target.value)} />
+
+                    </div>
+                    <div className='quantity'>
+                        <AiOutlineNumber className='user-icon' />
                         <select value={quantity} onChange={(e) => setQuantity(e.target.value)}>
                             {
                                 ReservationQuantity.map((item) => (
@@ -84,6 +90,7 @@ const Reservation = () => {
                 {
                     quantity && date && time && (
                         <div className='preview-reservation'>
+                            <p>The name for your reservation is: <br /> <span>{name}</span></p>
                             <p>Your Selected Number of Guests is: <br /> <span>{quantity}</span></p>
                             <p>Your Selected Date is: <br /> <span>{date}</span></p>
                             <p>Your Selected Time is: <br /> <span>{time}</span></p>

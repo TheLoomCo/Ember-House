@@ -33,7 +33,7 @@ const GrillandChill = () => {
                 category === "hors d'oeuvres & entrees" && (
                     <div className='menu-preview'>
                         <h2>Hors D'oeuvres & Entrees</h2>
-                        <a href="/hors-doeuvres-entrees.avif" download="Hors D'ouevres and Entrees"><img src="/hors-doeuvres-entrees.avif" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
+                        <a onClick={handleDownload} href="/hors-doeuvres-entrees.avif" download="Hors D'ouevres and Entrees"><img src="/hors-doeuvres-entrees.avif" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
                     </div>
                 )
             }

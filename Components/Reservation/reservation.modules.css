@@ -24,7 +24,7 @@
     }
     
     to {
-        max-height: 800px;
+        max-height: 900px;
     }
 }
 
@@ -55,10 +55,34 @@
     width: 200px;
 }
 
-.calendar,
+.name,
 .quantity,
+.calendar,
 .time {
     position: relative;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+}
+
+.name .user-icon {
+    position: absolute;
+    font-size: 1rem;
+    color: #000;
+    left: 10px;
+}
+
+.name input {
+    padding: 8px 0px 8px 30px;
+        border-radius: 6px;
+
+    border: none;
+    width: 100%;
+    font-family: 'OpenSauceSans';
+    cursor: pointer;
+
 }
 
  /* USER ICON */
@@ -80,7 +104,6 @@
     background-color: #fff;
     border: none;
         border-radius: 6px;
-
     font-family: 'OpenSauceSans';
     cursor: pointer;
 
@@ -202,7 +225,6 @@
             max-height: 800px;
         }
     }
-
     
     .form-inputs-wrapper {
         flex-direction: row;
@@ -217,7 +239,8 @@
         display: flex;
         align-items: center;
     }
-    .user-icon .user-icon {
+
+   .quantity .user-icon {
         position: absolute;
         font-size: 1rem;
         color: #000;
@@ -225,12 +248,15 @@
     }
     
     .quantity select {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
         padding: 8px 0px 8px 30px;
         width: 150px;
         background-color: #fff;
         border: none;
             border-radius: 6px;
-    
+        
         font-family: 'OpenSauceSans';
         cursor: pointer;
     
@@ -252,6 +278,9 @@
     }
     
     .calendar input {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
         padding: 8px 0px 8px 30px;
             border-radius: 6px;
     
@@ -276,6 +305,9 @@
     }
     
     .time select {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
         padding: 8px 0px 8px 30px;
         border-radius: 6px;
         border: none;
