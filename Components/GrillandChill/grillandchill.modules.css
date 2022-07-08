@@ -254,6 +254,10 @@
         }
     }
 
+    .menu-preview img {
+        width: 600px;
+    }
+
     .menu-preview-section {
         max-width: 1400px;
         margin: 0 auto;

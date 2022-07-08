@@ -7,6 +7,10 @@ const GrillandChill = () => {
 
     const [category, setCategory] = useState('clear filter');
 
+    const handleDownload = () => {
+        console.log('downloaded');
+    }
+
 
     return (
         <motion.section
@@ -33,7 +37,7 @@ const GrillandChill = () => {
                 category === "hors d'oeuvres & entrees" && (
                     <div className='menu-preview'>
                         <h2>Hors D'oeuvres & Entrees</h2>
-                        <a onClick={handleDownload} href="/hors-doeuvres-entrees.avif" download="Hors D'ouevres and Entrees"><img src="/webp/hors-doeuvres-entrees.webp" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
+                        <a onClick={handleDownload} href="/" download="Hors D'ouevres and Entrees"><img src="/webp/hors-doeuvres-entrees.webp" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
                     </div>
                 )
             }
@@ -42,7 +46,7 @@ const GrillandChill = () => {
                 category === "desserts and sides" && (
                     <div className='menu-preview'>
                         <h2>Desserts & Sides</h2>
-                        <a href="/desserts-sides.avif" download="Dessert and Sides"><img src="/webp/desserts-sides.webp" alt="Desserts and Sides" height="1000" width="773" /></a>
+                        <a href="/" download="Dessert and Sides"><img src="/webp/desserts-sides.webp" alt="Desserts and Sides" height="1000" width="773" /></a>
                     </div>
                 )
             }
@@ -50,7 +54,7 @@ const GrillandChill = () => {
                 category === "drinks / cocktails / wines" && (
                     <div className='menu-preview'>
                         <h2>Drinks / Cocktails / Wines</h2>
-                        <a href="/drinks.avif" download="Drinks"><img src="/webp/drinks.webp" alt="Drinks, Cocktails, & Wine" height="1000" width="773" /></a>
+                        <a href="/" download="Drinks"><img src="/webp/drinks.webp" alt="Drinks, Cocktails, & Wine" height="1000" width="773" /></a>
                     </div>
                 )
             }
