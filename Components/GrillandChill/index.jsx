@@ -12,7 +12,8 @@ const GrillandChill = () => {
         <motion.main
             whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
             transition={{ duration: 1 }}
-            className="ember-house-home-main">
+            className="ember-house-home-main"
+            id="menu">
             <div className='home-page-headers'>
                 <h2 className='text-gradient'>Grill and Chill</h2>
                 <h4>Come and see what Ember House has to offer!</h4>
@@ -29,43 +30,27 @@ const GrillandChill = () => {
 
             {/* Menu Preview */}
             {
-                category === "hors d'oeuvres" && (
+                category === "hors d'oeuvres & entrees" && (
                     <div className='menu-preview'>
-                        <h2>Hors D'oeuvres</h2>
-                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
+                        <h2>Hors D'oeuvres & Entrees</h2>
+                        <a href="/hors-doeuvres-entrees.avif" download="Hors D'ouevres and Entrees"><img src="/hors-doeuvres-entrees.avif" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
+                    </div>
+                )
+            }
+
+            {
+                category === "desserts and sides" && (
+                    <div className='menu-preview'>
+                        <h2>Desserts & Sides</h2>
+                        <a href="/desserts-sides.avif" download="Dessert and Sides"><img src="/desserts-sides.avif" alt="Desserts and Sides" height="1000" width="773" /></a>
                     </div>
                 )
             }
             {
-                category === "entrees" && (
-                    <div
-                        className='menu-preview'>
-                        <h2>Entrees</h2>
-                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
-                    </div>
-                )
-            }
-            {
-                category === "desserts" && (
+                category === "drinks / cocktails / wines" && (
                     <div className='menu-preview'>
-                        <h2>Desserts</h2>
-                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
-                    </div>
-                )
-            }
-            {
-                category === "cocktails" && (
-                    <div className='menu-preview'>
-                        <h2>Cocktails</h2>
-                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
-                    </div>
-                )
-            }
-            {
-                category === "wine" && (
-                    <div className='menu-preview'>
-                        <h2>Wine</h2>
-                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
+                        <h2>Drinks / Cocktails / Wines</h2>
+                        <a href="/drinks.avif" download="Drinks"><img src="/drinks.avif" alt="Drinks, Cocktails, & Wine" height="1000" width="773" /></a>
                     </div>
                 )
             }
@@ -75,7 +60,7 @@ const GrillandChill = () => {
 
                         className='menu-preview-section'>
 
-                        <img src="/entrees.png" alt="entrees" />
+                        <img src="/1.avif" alt="entrees" height="250" width="444" />
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
                         </p>
@@ -83,9 +68,9 @@ const GrillandChill = () => {
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
                         </p>
-                        <img src="/cocktails.png" alt="cocktails" />
+                        <img src="/18.avif" alt="cocktails" height="250" width="444" />
 
-                        <img src="/entertainment.png" alt="entertainment" />
+                        <img src="/20.avif" alt="entertainment" height="250" width="444" />
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pulvinar neque neque, sit amet scelerisque enim mollis vel. Vestibulum sagittis lacus nec turpis consequat, vel pellentesque quam venenatis.
                         </p>

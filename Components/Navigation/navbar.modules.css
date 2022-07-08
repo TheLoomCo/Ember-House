@@ -3,11 +3,11 @@
 @media screen and (min-width: 1025px) {
 
     .navbar-style-wrapper {
-        padding: 20px 0px;
+        padding: 20px 0;
         width: 100%;
         position: fixed;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         z-index: 100;
         transition: background-color 0.2s ease;
     }
@@ -19,11 +19,10 @@
     .navbar {
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
         align-items: center;
         max-width: 1600px;
         width: 100%;
-        margin: 0px auto;
+        margin: 0 auto;
         padding: 10px 40px;
         position: relative;
         row-gap: 20px;
@@ -32,7 +31,7 @@
     .nav-communication-container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         color: #fff;
         width: 100%;
     }
@@ -47,7 +46,6 @@
     .nav-phone svg {
         font-size: 1.4rem;
     }
-    
 
     .nav-logo {
         position: relative;
@@ -65,14 +63,17 @@
         column-gap: 16px;
     }
 
-    .nav-socials svg {
-        cursor: pointer;
+    .nav-socials a {
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .nav-list {
         display: flex;
         align-items: center;
-        column-gap: 20px;
+        column-gap: 30px;
         font-family: 'Montserrat';
         position: relative;
         font-size: 1.3rem;
@@ -88,7 +89,7 @@
         position: absolute;
         bottom: -7px;
         left: 2px;
-        width: 0px;
+        width: 0;
         background-color: #fff;
         height: 2px;
         transition: width 0.5s ease;
@@ -97,12 +98,12 @@
         width: 50px;
     }
 
- .nav-communication-container.color-black,
-    .nav-list li a.color-black {
+    .nav-communication-container.color-black,
+    .nav-list li a.color-black,
+    .nav-socials a.color-black {
         color: #000;
         position: relative;
     }
-
 
     .nav-list li a.active::before {
         content: '';

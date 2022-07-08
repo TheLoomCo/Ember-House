@@ -19,22 +19,22 @@ const Navigation = () => {
     };
 
     return (
-        <div className={clientWindowHeight > 200 ? 'navbar-style-wrapper background-fill' : 'navbar-style-wrapper'}>
+        <div className={clientWindowHeight > 50 ? 'navbar-style-wrapper background-fill' : 'navbar-style-wrapper'}>
             <nav id="navigation" className="navbar">
-                <div className={clientWindowHeight > 200 ? 'nav-communication-container color-black' : 'nav-communication-container'}>
+                <div className={clientWindowHeight > 50 ? 'nav-communication-container color-black' : 'nav-communication-container'}>
                     <div className='nav-phone'>
                         <BsTelephoneFill />
                         <span>(123)-456-7890</span>
                     </div>
                     <Link href="/">
                         <a className="nav-logo">
-                            <img src={clientWindowHeight > 200 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" />
+                            <img src={clientWindowHeight > 50 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" width="120" height="70" />
                         </a>
                     </Link>
-                    <div className={clientWindowHeight > 200 ? ' nav-socials color-black' : 'nav-socials'}>
-                        <BsFacebook title="Visit Facebook" />
-                        <BsInstagram title="Visit Instagram" />
-                        <BsTwitter title="Visit YouTube" />
+                    <div className='nav-socials'>
+                        <Link href="/"><a className={clientWindowHeight > 50 ? ' color-black' : ''} target="_blank" rel="noreferrer"><BsFacebook title="Visit Facebook" /></a></Link>
+                        <Link href="/"><a className={clientWindowHeight > 50 ? ' color-black' : ''} target="_blank" rel="noreferrer"><BsInstagram title="Visit Instagram" /></a></Link>
+                        <Link href="/"><a className={clientWindowHeight > 50 ? ' color-black' : ''} target="_blank" rel="noreferrer"><BsTwitter title="Visit YouTube" /></a></Link>
                     </div>
                 </div>
 
@@ -43,7 +43,7 @@ const Navigation = () => {
                         NavLinkData.map((link) => (
                             <li key={link?.id} >
                                 <Link href={link?.url}>
-                                    <a className={`${router.pathname === link?.url ? 'active' : ''} ${clientWindowHeight > 200 ? 'color-black' : ''} `}>
+                                    <a className={`${router.pathname === link?.url ? 'active' : ''} ${clientWindowHeight > 50 ? 'color-black' : ''} `}>
                                         {link?.title}
                                     </a>
                                 </Link>

@@ -9,10 +9,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Reservation = () => {
-
     const [quantity, setQuantity] = useState(undefined);
     const [date, setDate] = useState(undefined);
-    const [time, setTime] = useState(undefined)
+    const [time, setTime] = useState(undefined);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -32,8 +31,14 @@ const Reservation = () => {
         setTime("")
     }
 
+    const handleReset = () => {
+        setQuantity("")
+        setDate("")
+        setTime("")
+    }
+
     return (
-        <div className='form-styling-wrapper'>
+        <div id="reservation" className={quantity && date && time ? 'form-styling-wrapper preview' : 'form-styling-wrapper'}>
             <form className='reservation-form'>
                 <h2>Book a Reservation</h2>
 
@@ -64,6 +69,8 @@ const Reservation = () => {
                             }
                         </select>
                     </div>
+
+                    <button onClick={handleReset} type="button">Reset</button>
 
                     <ToastContainer
                         position="bottom-center"

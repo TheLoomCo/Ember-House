@@ -34,11 +34,30 @@ footer h2 {
 .business-location-info {
     text-align: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     column-gap: 60px;
     font-size: 1.2rem;
+}
+
+.newsletter {
+    width: 20%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    row-gap: 10px;
+}
+
+fieldset label {
+    font-size: 1.2rem;
+}
+
+fieldset input {
+    padding: 8px;
+    width: 100%;
 }
 
 .business-location-info p {

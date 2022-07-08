@@ -2,22 +2,30 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='footer-wrapper'>
+        <div id="contact" className='footer-wrapper'>
             <footer>
                 <h2>Contact Us</h2>
                 <div className='footer-content-container'>
-                    <img src="/map.png" alt="map" />
                     <div className='business-location-info'>
-                        <p className='business-title'>
-                            Ember House
-                        </p>
-                        <p className='business-phone'>
-                            (123)-456-7890
-                        </p>
-                        <p className='business-address'>
-                            1234 Rd
-                            Tampa, FL 33606
-                        </p>
+                        <img src="/map.png" alt="map" />
+                        <div>
+                            <p className='business-title'>
+                                Ember House
+                            </p>
+                            <p className='business-phone'>
+                                (123)-456-7890
+                            </p>
+                            <p className='business-address'>
+                                1234 Rd
+                                Tampa, FL 33606
+                            </p>
+                        </div>
+                    </div>
+                    <div className='newsletter'>
+                        <fieldset>
+                            <label htmlFor='email'>Signup for our Newsletter</label>
+                            <input id="email" type="email" placeholder='Stay up to date!' value="" />
+                        </fieldset>
                     </div>
                     <div className='business-hours'>
                         <h6>Hours of Operation:</h6>

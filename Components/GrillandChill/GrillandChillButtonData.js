@@ -1,19 +1,19 @@
 export const ButtonData = [
     {
-        title: "hors d'oeuvres"
+        title: "hors d'oeuvres & entrees"
     },
     {
-        title: "entrees"
+        title: "desserts and sides"
     },
     {
-        title: "desserts"
+        title: "drinks / cocktails / wines"
     },
-    {
-        title: "cocktails"
-    },
-    {
-        title: "wine"
-    },
+    // {
+    //     title: "cocktails"
+    // },
+    // {
+    //     title: "wine"
+    // },
     {
         title: "clear filter"
     }

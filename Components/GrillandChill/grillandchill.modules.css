@@ -1,5 +1,10 @@
 /* Home Page Main Content */
 @media screen and (min-width: 1120px) {
+
+    #menu {
+        scroll-margin-top: 160px
+    }
+
     .ember-house-home-main {
         background-color: #0C120C;
         padding: 60px 20px 60px;
@@ -44,9 +49,13 @@
         border: none;
         outline: 1px solid #fff;
         padding: 10px;
-        width: 150px;
+        width: 200px;
         border-radius: 10px;
         cursor: pointer;
+    }
+
+    .category-btns button:focus {
+        outline: 1px solid blue;
     }
 
     /* Menu Preview Section */
