@@ -35,7 +35,7 @@ const Reservation = () => {
     return (
         <div className='form-styling-wrapper'>
             <form className='reservation-form'>
-                <h2>Find a Table</h2>
+                <h2>Book a Reservation</h2>
 
                 <div className='form-inputs-wrapper'>
                     <div className='quantity'>
