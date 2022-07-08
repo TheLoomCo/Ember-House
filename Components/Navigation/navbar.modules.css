@@ -1,6 +1,120 @@
 /* Navigation Styling */
 
+#mobileMenuTrigger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#mobileMenuTrigger div {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+.menuToggle .line1 {
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.menuToggle .line2 {
+    opacity: 0;
+}
+
+.menuToggle .line3 {
+    transform: rotate(45deg) translate(-5.2px, -4px);
+}
+
+.navbar-style-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: background-color 0.2s ease;
+    
+}
+
+.navbar {
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    row-gap: 20px;
+    background: #000;
+}
+
+.nav-communication-container {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    padding: 20px 20px;
+}
+.nav-communication-container.color-black,
+.nav-socials a.color-black {
+    color: #000;
+    position: relative;
+}
+
+.nav-phone,
+.nav-socials {
+    display: none;
+}
+
+.nav-logo {
+    width: 100px;
+    height: 50px;
+}
+
+.nav-list {
+    display: none;
+}
+
+.nav-list.active-links {
+    display: flex;
+    flex-direction: column;
+    bottom: 17px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    justify-content: space-around;
+    /* background: linear-gradient(#BB4604, #FF0D39); */
+    background-color: #000;
+    row-gap: 15px;
+    font-size: 1.2rem;
+    font-family: 'Montserrat';
+    padding: 20px;
+    height: 65vh;
+    width: 100%;
+    position: relative;
+}
+
+/* .nav-list.active-links::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background: #00000063;
+	z-index: 0;
+} */
+
+.nav-list li a {
+    color: #fff;
+    position: relative;
+}
+
 @media screen and (min-width: 1025px) {
+
+    #mobileMenuTrigger {
+        display: none;
+    }
 
     .navbar-style-wrapper {
         padding: 20px 0;
@@ -26,6 +140,7 @@
         padding: 10px 40px;
         position: relative;
         row-gap: 20px;
+        background: transparent;
     }
 
     .nav-communication-container {
