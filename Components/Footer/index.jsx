@@ -65,8 +65,8 @@ const Footer = () => {
                             <p className='available-hours'>11am - 6pm</p>
                         </div>
                     </div>
-                    <span className='copyright'>Copyright &copy; {new Date().getFullYear()} LoomCo & ALStudio</span>
                 </div>
+                <span className='copyright'>Copyright &copy; {new Date().getFullYear()} LoomCo & ALStudio</span>
 
             </footer>
         </div>

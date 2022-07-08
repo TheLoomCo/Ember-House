@@ -5,6 +5,10 @@ footer {
     max-width: 1800px;
     font-family: 'OpenSauceSans';
     margin: 0px auto;
+    outline: solid;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
 }
 
 footer h2 {

@@ -62,7 +62,7 @@ const Reservation = () => {
 
                     <div className='calendar'>
                         <BiCalendar className='calendar-icon' />
-                        <input type="date" placeholer="DD/MM/YYYY" value={date} onChange={(e) => setDate(e.target.value)} />
+                        <input type="date" placeholer="Reservation Date" value={date} onChange={(e) => setDate(e.target.value)} />
                     </div>
 
                     <div className='time'>

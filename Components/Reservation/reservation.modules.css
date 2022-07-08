@@ -194,7 +194,7 @@
     align-items: center;
     row-gap: 20px;
     animation: previewReservation 1s ease forwards;
-    outline: solid;
+    border: 2px solid #fff;
 }
 
 @keyframes previewReservation {
@@ -245,124 +245,26 @@
         width: auto;
     }
     
-    /* USER ICON */
-    
-    .quantity .user-icon {
-        display: flex;
-        align-items: center;
+    .name,
+    .quantity{
+        width: 180px
+    }
+    .calendar {
+        width: 150px;
+    }
+    .time {
+        width: 160px;
     }
 
-   .quantity .user-icon {
-        position: absolute;
-        font-size: 1rem;
-        color: #000;
-        left: 10px;
-    }
-    
-    .quantity select {
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        padding: 8px 0px 8px 30px;
-        width: 150px;
-        background-color: #fff;
-        border: none;
-            border-radius: 6px;
-        
-        font-family: 'OpenSauceSans';
-        cursor: pointer;
-    
-    }
-    
-    /* CALENDAR ICON */
-    
-    .calendar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .calendar-icon {
-        position: absolute;
-        font-size: 1rem;
-        color: #000;
-        left: 10px;
-    }
-    
-    .calendar input {
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        padding: 8px 0px 8px 30px;
-            border-radius: 6px;
-    
-        border: none;
-        width: 150px;
-        font-family: 'OpenSauceSans';
-        cursor: pointer;
-    
-    }
-    
-    /* TIME ICON */
-    
-    .time {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .time-icon {
-        position: absolute;
-        left: 10px;
-    }
-    
-    .time select {
-        appearance: none;
-        -moz-appearance: none;
-        -webkit-appearance: none;
-        padding: 8px 0px 8px 30px;
-        border-radius: 6px;
-        border: none;
-        width: 150px;
-        font-family: 'OpenSauceSans';
-        cursor: pointer;
-    
-    }
-    
     .reservation-form button {
         width: auto;
     }
-    
-    .preview-reservation {
-        margin: 0px auto;
-        padding: 40px 20px;
-        background-color: #0C120C;
-        color: #fff;
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 20px;
-        animation: previewReservation 1s ease forwards;
-    }
-    
-    @keyframes previewReservation {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+
 
     .preview-reservation p br {
         display: none;
     }
     
-    .preview-reservation p span {
-        font-weight: bold;
-        text-decoration: underline;
-    }
 }
 
 
