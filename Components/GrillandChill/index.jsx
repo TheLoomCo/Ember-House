@@ -16,7 +16,7 @@ const GrillandChill = () => {
             id="menu">
             <div className='home-page-headers'>
                 <h2 className='text-gradient'>Grill and Chill</h2>
-                <h4>Come and see what Ember House has to offer!</h4>
+                <h3>Come and see what Ember House has to offer!</h3>
             </div>
             <div className='category-btns'>
                 {

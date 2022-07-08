@@ -28,7 +28,7 @@ const Navigation = () => {
                     </div>
                     <Link href="/">
                         <a className="nav-logo">
-                            <img src={clientWindowHeight > 50 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" width="120" height="70" />
+                            <img src={clientWindowHeight > 50 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" width="150" height="90" />
                         </a>
                     </Link>
                     <div className='nav-socials'>

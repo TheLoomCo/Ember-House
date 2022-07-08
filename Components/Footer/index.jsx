@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Footer = () => {
+    const [email, setEmail] = useState("")
     return (
         <div id="contact" className='footer-wrapper'>
             <footer>
@@ -24,11 +25,11 @@ const Footer = () => {
                     <div className='newsletter'>
                         <fieldset>
                             <label htmlFor='email'>Signup for our Newsletter</label>
-                            <input id="email" type="email" placeholder='Stay up to date!' value="" />
+                            <input id="email" type="email" placeholder='Stay up to date!' value={email} onChange={() => setEmail(e.target.value)} />
                         </fieldset>
                     </div>
                     <div className='business-hours'>
-                        <h6>Hours of Operation:</h6>
+                        <h4>Hours of Operation:</h4>
 
                         <div>
                             <p className='day'>Monday - Friday</p>
