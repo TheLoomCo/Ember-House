@@ -3,7 +3,7 @@
 @media screen and (min-width: 1025px) {
 
     .navbar-style-wrapper {
-        padding: 20px 40px;
+        padding: 20px 0px;
         width: 100%;
         position: fixed;
         top: 0px;
@@ -18,20 +18,55 @@
 
     .navbar {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        /* justify-content: center; */
         align-items: center;
         max-width: 1600px;
         width: 100%;
         margin: 0px auto;
+        padding: 10px 40px;
         position: relative;
+        row-gap: 20px;
     }
+
+    .nav-communication-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+        width: 100%;
+    }
+
+    .nav-phone {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        font-size: 1.2rem;
+    }
+
+    .nav-phone svg {
+        font-size: 1.4rem;
+    }
+    
 
     .nav-logo {
         position: relative;
+        transform: translateX(-25%);
     }
 
     .nav-logo img {
         width: 120px;
+    }
+
+    .nav-socials {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    .nav-socials svg {
+        cursor: pointer;
     }
 
     .nav-list {
@@ -47,6 +82,22 @@
         color: #fff;
         position: relative;
     }
+
+    .nav-list li a::before {
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        left: 2px;
+        width: 0px;
+        background-color: #fff;
+        height: 2px;
+        transition: width 0.5s ease;
+    }
+    .nav-list li a:hover:before {
+        width: 50px;
+    }
+
+ .nav-communication-container.color-black,
     .nav-list li a.color-black {
         color: #000;
         position: relative;

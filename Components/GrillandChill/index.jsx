@@ -5,7 +5,8 @@ import { motion } from 'framer-motion'
 
 const GrillandChill = () => {
 
-    const [category, setCategory] = useState('clear filter')
+    const [category, setCategory] = useState('clear filter');
+
 
     return (
         <motion.main
@@ -13,7 +14,7 @@ const GrillandChill = () => {
             transition={{ duration: 1 }}
             className="ember-house-home-main">
             <div className='home-page-headers'>
-                <h2>Grill and Chill</h2>
+                <h2 className='text-gradient'>Grill and Chill</h2>
                 <h4>Come and see what Ember House has to offer!</h4>
             </div>
             <div className='category-btns'>
@@ -31,15 +32,16 @@ const GrillandChill = () => {
                 category === "hors d'oeuvres" && (
                     <div className='menu-preview'>
                         <h2>Hors D'oeuvres</h2>
-                        <img src="/placeholder-menu.png" alt="" />
+                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
             {
                 category === "entrees" && (
-                    <div className='menu-preview'>
+                    <div
+                        className='menu-preview'>
                         <h2>Entrees</h2>
-                        <img src="/placeholder-menu.png" alt="" />
+                        <a href="" download="placeholder-menu"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
@@ -47,7 +49,7 @@ const GrillandChill = () => {
                 category === "desserts" && (
                     <div className='menu-preview'>
                         <h2>Desserts</h2>
-                        <img src="/placeholder-menu.png" alt="" />
+                        <a href="" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
@@ -55,7 +57,7 @@ const GrillandChill = () => {
                 category === "cocktails" && (
                     <div className='menu-preview'>
                         <h2>Cocktails</h2>
-                        <img src="/placeholder-menu.png" alt="" />
+                        <a href="" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
@@ -63,7 +65,7 @@ const GrillandChill = () => {
                 category === "wine" && (
                     <div className='menu-preview'>
                         <h2>Wine</h2>
-                        <img src="/placeholder-menu.png" alt="" />
+                        <a href="" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }

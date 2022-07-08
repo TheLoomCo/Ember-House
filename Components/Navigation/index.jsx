@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { NavLinkData } from './NavLinkData';
 
+import { BsFacebook, BsInstagram, BsTelephoneFill, BsTwitter } from 'react-icons/bs';
+
 const Navigation = () => {
     const router = useRouter();
     const [clientWindowHeight, setClientWindowHeight] = useState("");
@@ -16,27 +18,25 @@ const Navigation = () => {
         setClientWindowHeight(window.scrollY);
     };
 
-
-    // useEffect(() => {
-    //     let backgroundTransparacyVar = clientWindowHeight / 600;
-
-    //     if (backgroundTransparacyVar < 1) {
-    //         let paddingVar = 30 - backgroundTransparacyVar * 20;
-    //         let boxShadowVar = backgroundTransparacyVar * 0.1;
-    //         setBackgroundTransparacy(backgroundTransparacyVar);
-    //         setPadding(paddingVar);
-    //         setBoxShadow(boxShadowVar);
-    //     }
-    // }, [clientWindowHeight]);
-
     return (
         <div className={clientWindowHeight > 200 ? 'navbar-style-wrapper background-fill' : 'navbar-style-wrapper'}>
             <nav id="navigation" className="navbar">
-                <Link href="/">
-                    <a className="nav-logo">
-                        <img src={clientWindowHeight > 200 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" />
-                    </a>
-                </Link>
+                <div className={clientWindowHeight > 200 ? 'nav-communication-container color-black' : 'nav-communication-container'}>
+                    <div className='nav-phone'>
+                        <BsTelephoneFill />
+                        <span>(123)-456-7890</span>
+                    </div>
+                    <Link href="/">
+                        <a className="nav-logo">
+                            <img src={clientWindowHeight > 200 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" />
+                        </a>
+                    </Link>
+                    <div className={clientWindowHeight > 200 ? ' nav-socials color-black' : 'nav-socials'}>
+                        <BsFacebook title="Visit Facebook" />
+                        <BsInstagram title="Visit Instagram" />
+                        <BsTwitter title="Visit YouTube" />
+                    </div>
+                </div>
 
                 <ul className="nav-list">
                     {

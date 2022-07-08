@@ -10,7 +10,7 @@ const HeroSection = () => {
             <Navigation />
             <div className="hero-cta">
                 <h1>Ember House</h1>
-                <a href="/reservation.html">Book a Reservation</a>
+                <a href="/reservation.html">Reserve Your Seat!</a>
             </div>
         </section>
     )

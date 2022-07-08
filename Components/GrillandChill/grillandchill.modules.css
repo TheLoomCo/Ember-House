@@ -2,8 +2,7 @@
 @media screen and (min-width: 1120px) {
     .ember-house-home-main {
         background-color: #0C120C;
-        padding: 80px 20px 80px;
-
+        padding: 60px 20px 60px;
     }
 
     .home-page-headers {
@@ -11,12 +10,14 @@
         flex-direction: column;
         align-items: center;
         font-family: 'Montserrat';
+        row-gap: 20px;
     }
 
     .home-page-headers h2 {
         color: #FF933F;
         font-size: 4rem;
         font-weight: 400;
+        line-height: 0.8;
     }
 
     .home-page-headers h4 {
@@ -57,18 +58,56 @@
         justify-content: center;
         align-items: center;
         row-gap: 30px;
+        /* animation: menuPreview 1s ease; */
+        position: relative;
     }
+
+
+    /* @keyframes menuPreview {
+        from {
+            opacity: 0;
+            right: -150px;
+        } to {
+            opacity: 1;
+            right: 0px;
+        }
+    } */
 
     .menu-preview h2 {
         font-size: 4rem;
         font-family: 'Montserrat';
         font-weight: 300;
         color: #fff;
+        animation: menuPreviewHeader 1s ease;
+        position: relative;
     }
 
-    .menu-preview img {
-        width: 550px;
+    @keyframes menuPreviewHeader {
+        from {
+            opacity: 0;
+            left: -150px;
+        } to {
+            opacity: 1;
+            left: 0px;
+        }
     }
+
+    .menu-preview a {
+        position: relative;
+        animation: menuPreviewImage 1s ease;
+    }
+
+    @keyframes menuPreviewImage {
+        from {
+            opacity: 0;
+            right: -150px;
+        }
+        to {
+            opacity: 1;
+            right: 0px;
+        }
+    }
+
 
     .menu-preview-section {
         max-width: 1400px;
@@ -80,6 +119,17 @@
         padding: 5px;
         column-gap: 10px;
         row-gap: 80px;
+        animation: previewSection 0.5s ease;
+    }
+
+    @keyframes previewSection {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
     .menu-preview-section img {
