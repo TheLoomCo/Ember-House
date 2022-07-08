@@ -41,7 +41,7 @@ const GrillandChill = () => {
                     <div
                         className='menu-preview'>
                         <h2>Entrees</h2>
-                        <a href="" download="placeholder-menu"><img src="/placeholder-menu.png" alt="" /></a>
+                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
@@ -49,7 +49,7 @@ const GrillandChill = () => {
                 category === "desserts" && (
                     <div className='menu-preview'>
                         <h2>Desserts</h2>
-                        <a href="" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
+                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
@@ -57,7 +57,7 @@ const GrillandChill = () => {
                 category === "cocktails" && (
                     <div className='menu-preview'>
                         <h2>Cocktails</h2>
-                        <a href="" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
+                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
@@ -65,7 +65,7 @@ const GrillandChill = () => {
                 category === "wine" && (
                     <div className='menu-preview'>
                         <h2>Wine</h2>
-                        <a href="" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
+                        <a href="/placeholder-menu.png" download="placeholder-image"><img src="/placeholder-menu.png" alt="" /></a>
                     </div>
                 )
             }
