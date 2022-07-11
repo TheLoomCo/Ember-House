@@ -115,6 +115,12 @@ fieldset input {
     text-align: center;
 }
 
+@media screen and (min-width: 479px) {
+    footer {
+        border: 2px solid blue; 
+    }
+}
+
 
 
 @media screen and (min-width: 1025px) {
