@@ -11,7 +11,7 @@ const AboutComp = () => {
 
     const aboutPage = router.pathname === '/about';
     return (
-        <div className='about-comp__wrapper'>
+        <div id="about" className='about-comp__wrapper'>
             <h2 className='restaurant__heading'>The Restaurant</h2>
             <div className='image__wrapper'>
                 <Image

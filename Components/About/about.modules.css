@@ -20,8 +20,10 @@
     width: 98%;
     text-align: center;
     margin: 0 auto;
-    font-size: 1.1rem;
-    line-height: 1.7;
+    font-size: 1rem;
+    line-height: 2;
+    letter-spacing: 0.35px;
+    font-family: 'OpenSauceSans';
 }
 
 .about-comp__wrapper .image__wrapper {
