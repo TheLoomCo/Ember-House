@@ -1,4 +1,8 @@
     /* This styling is for Components/About/TeamMember/index.jsx */
+
+    /* .team__wrapper {
+
+    } */
     
     .team-member {
         display: flex;
@@ -20,7 +24,7 @@
     
     .team-member pre {
         font-family: 'OpenSauceSans';
-        font-size: 0.9rem;
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
         line-height: 1.7;
         letter-spacing: 0.35px;
         text-align: center;

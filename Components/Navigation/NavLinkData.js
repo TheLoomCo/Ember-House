@@ -12,16 +12,16 @@ export const NavLinkData = [
     {
         id: 3,
         title: 'Menu',
-        url: '#menu'
+        url: '/#menu'
     },
     {
         id: 4,
         title: 'Reservations',
-        url: '#reservation'
+        url: '/#reservation'
     },
     {
         id: 5,
         title: 'Contact',
-        url: '#contact'
+        url: '/#contact'
     },
 ]

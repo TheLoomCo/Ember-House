@@ -11,12 +11,6 @@ export const ButtonData = [
         title: "drinks / cocktails / wines",
         id: "/#drinks"
     },
-    // {
-    //     title: "cocktails"
-    // },
-    // {
-    //     title: "wine"
-    // },
     {
         title: "clear filter",
         id: "#clear"

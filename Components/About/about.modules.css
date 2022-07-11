@@ -1,13 +1,13 @@
 /* This styling is for Components/About/index.jsx */
 
 .about-comp__wrapper {
-    padding: 0px 10px 80px;
+    padding: 0px 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.restaurant__heading {
+.about-restaurant__heading {
     font-size: clamp(2rem, 10vw, 4rem);
     font-family: 'Montserrat';
     font-weight: 300;
@@ -17,10 +17,11 @@
 
 .restaurant__biography {
     color: #fff;
+    max-width: 650px;
     width: 98%;
     text-align: center;
     margin: 0 auto;
-    font-size: 1rem;
+    font-size: 0.85rem;
     line-height: 2;
     letter-spacing: 0.35px;
     font-family: 'OpenSauceSans';

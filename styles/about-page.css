@@ -1,18 +1,9 @@
 /* This styling is for pages/about.js */
 
 .about-page__wrapper {
-    padding: 20px 10px 60px;
+    padding: 25px 10px 60px;
     max-width: 1600px;
     margin: 0 auto;
-}
-
-.about-page__wrapper .restaurant__heading {
-    margin: 20px 0px;
-    font-size: clamp(2rem, 8vw, 4rem);
-    font-family: 'Montserrat';
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
 }
 
 .team__heading {
@@ -22,7 +13,7 @@
     font-weight: 300;
     text-align: center;
     color: #fff;
-    scroll-margin-top: 250px;
+    scroll-margin-top: 130px;
 }
 
 .team-members__wrapper {
@@ -42,6 +33,10 @@
 
     .team-members__wrapper {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .team__heading {
+        scroll-margin-top: 250px;
     }
 
 
