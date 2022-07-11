@@ -1,9 +1,12 @@
-footer {
+.footer__wrapper {
     background-color: #d9d9d91c;
     color: #fff;
+    font-family: 'OpenSauceSans';
+}
+
+footer {
     padding: 40px 10px;
     max-width: 1800px;
-    font-family: 'OpenSauceSans';
     margin: 0px auto;
     display: flex;
     flex-direction: column;

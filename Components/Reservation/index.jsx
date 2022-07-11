@@ -26,7 +26,6 @@ const Reservation = () => {
             progress: undefined,
         });
 
-
         setQuantity("")
         setDate("")
         setTime("")
@@ -39,11 +38,11 @@ const Reservation = () => {
     }
 
     return (
-        <div id="reservation" className={name && quantity && date && time ? 'form-styling-wrapper preview' : 'form-styling-wrapper'}>
+        <div id="reservation" className={name && quantity && date && time ? 'form-styling__wrapper preview' : 'form-styling__wrapper'}>
             <form className='reservation-form'>
                 <h2>Book a Reservation</h2>
 
-                <div className='form-inputs-wrapper'>
+                <div className='form-inputs__container'>
                     <div className='name'>
                         <FaUser className='user-icon' />
                         <input type="string" placeholder='Name for Reservation' value={name} onChange={(e) => setName(e.target.value)} />
@@ -89,7 +88,7 @@ const Reservation = () => {
                 </div>
                 {
                     quantity && date && time && (
-                        <div className='preview-reservation'>
+                        <div className='preview-reservation__container'>
                             <p>The name for your reservation is: <br /> <span>{name}</span></p>
                             <p>Your Selected Number of Guests is: <br /> <span>{quantity}</span></p>
                             <p>Your Selected Date is: <br /> <span>{date}</span></p>

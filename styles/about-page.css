@@ -37,7 +37,7 @@
 
 @media screen and (min-width: 1025px) {
     .about-page__wrapper {
-        padding-top: 40px;
+        padding: 40px 0px 112px;
     }
 
     .team-members__wrapper {

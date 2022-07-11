@@ -2,7 +2,7 @@
     scroll-margin-top: 150px;
 }
 
-.grill-and-chill {
+.grill-and-chill__wrapper {
     padding: 40px 10px;
 }
 
@@ -77,7 +77,7 @@
     position: relative;
 }
 
-.menu-preview-section {
+.trifecta__container {
     max-width: 1400px;
     margin: 0 auto;
     display: grid;
@@ -113,29 +113,13 @@
     box-shadow: 2px 2px 10px -2px #000;
 }
 
-.menu-preview-food {
-    display: flex;
+.trifecta-descriptions {
+    display:flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    box-shadow: 2px 2px 10px -2px #d9d9d916;
-    background-color: #d9d9d916;
-    padding: 16px 10px;
-    border-radius: 10px;
-    row-gap: 10px;
+    row-gap: 80px;
 }
-.menu-preview-drinks {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    width: 100%;
-    box-shadow: 2px 2px 10px -2px #d9d9d916;
-    background-color: #d9d9d916;
-    padding: 16px 10px;
-    border-radius: 10px;
-    row-gap: 10px;
-}
-.menu-preview-entertainment {
+
+.trifecta__container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,14 +131,18 @@
     row-gap: 10px;
 }
 
-.menu-preview-section img {
+.trifecta__container:nth-child(2){
+    flex-direction: column-reverse;
+}
+
+.trifecta__container img {
     box-shadow: 2px 2px 10px -2px #000;
     border-radius: 16px;
     width: 100%;
     object-fit: cover;
 }
 
-.menu-preview-section p {
+.trifecta__container p {
     color: #fff;
     font-family: 'OpenSauceSans';
     max-width: 500px;
@@ -163,13 +151,28 @@
     font-size: 0.9rem;
 }
 
+@media screen and (min-width: 479px) {
+    .trifecta__container {
+        max-width: 500px;
+    }
+
+    .trifecta__container p {
+        color: #fff;
+        font-family: 'OpenSauceSans';
+        max-width: 500px;
+        line-height: 1.8;
+        letter-spacing: 0.8px;
+        font-size: 1rem;
+    }
+}
+
 @media screen and (min-width: 1120px) {
 
     #menu {
         scroll-margin-top: 200px;
     }
 
-    .grill-and-chill {
+    .grill-and-chill__wrapper {
         padding: 60px 20px;
     }
 
@@ -276,7 +279,7 @@
         width: 600px;
     }
 
-    .menu-preview-section {
+    .trifecta-descriptions {
         max-width: 1200px;
         margin: 0 auto;
         display: grid;
@@ -289,7 +292,7 @@
         animation: previewSection 0.5s ease;
     }
 
-    .menu-preview-food {
+    .trifecta__container {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -298,23 +301,8 @@
         padding: 20px;
         max-width: 1300px;
     }
-    .menu-preview-drinks {
-        display: flex;
+    .trifecta__container:nth-child(2){
         flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 20px;
-        max-width: 1300px;
-    }
-    .menu-preview-entertainment {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        padding: 20px;
-        max-width: 1300px;
     }
     @keyframes previewSection {
         from {
@@ -326,13 +314,13 @@
         }
     }
 
-    .menu-preview-section img {
+    .trifecta__container img {
         box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.382);
         border-radius: 16px;
         width: auto;
     }
 
-    .menu-preview-section p {
+    .trifecta__container p {
         color: #fff;
         font-family: 'OpenSauceSans';
         max-width: 500px;

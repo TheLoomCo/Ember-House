@@ -28,7 +28,7 @@ const GrillandChill = () => {
         <motion.section
             whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
             transition={{ duration: 1 }}
-            className="grill-and-chill"
+            className="grill-and-chill__wrapper"
             id="menu">
             <div className='grill-and-chill-headers'>
                 <h2 className='text-gradient'>Grill and Chill</h2>
@@ -73,23 +73,23 @@ const GrillandChill = () => {
             {
                 category === 'clear filter' && (
                     <div
-                        className='menu-preview-section'>
+                        className='trifecta-descriptions'>
 
-                        <div className='menu-preview-food'>
+                        <div className='trifecta__container'>
                             <img src="/webp/19.webp" alt="entrees" height="250" width="444" />
                             <p>
                                 Join us for an unforgettable grill experience at the one and only: Ember House. Our kitchen is graced by some of the greatest Chefs in the world, creating unrivaled dishes for your dining pleasure. We have a range of grilled, fried and seafood offerings and they are cooked using the finest ingredients.
                             </p>
                         </div>
 
-                        <div className='menu-preview-drinks'>
+                        <div className='trifecta__container'>
                             <p>
                                 Take the edge off with our lengthy cocktail menu or recline and luxuriate with our selection of fine wines. Whatever your pleasure, we can pour it up.
                             </p>
                             <img src="/webp/2.webp" alt="cocktails" height="250" width="444" />
 
                         </div>
-                        <div className='menu-preview-entertainment'>
+                        <div className='trifecta__container'>
                             <img src="/webp/10.webp" alt="entertainment" height="250" width="444" />
                             <p>
                                 Ember House is home to a world class stage that boasts world renowned entertainers. Musicians, bands, comedians and speakers take to the stage to show the world what they've got. The essence of "Grill & Chill."

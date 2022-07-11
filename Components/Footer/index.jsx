@@ -21,7 +21,7 @@ const Footer = () => {
         setEmail("");
     }
     return (
-        <div id="contact" className='footer-wrapper'>
+        <div id="contact" className='footer__wrapper'>
             <footer>
                 <h2>Contact Us</h2>
                 <div className='footer-content-container'>

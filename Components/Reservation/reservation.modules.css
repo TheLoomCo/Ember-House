@@ -7,7 +7,7 @@
 	width: 500px !important;
 }
 
-.form-styling-wrapper {
+.form-styling__wrapper {
     margin: 80px 0px 100px;
     padding: 40px;
     background-color: #d9d9d91c;
@@ -16,12 +16,12 @@
 
 
 @media screen and (min-width: 1025px) {
-    .form-styling-wrapper {
+    .form-styling__wrapper {
         margin-bottom: 135px;
     }
 }
 
-.form-styling-wrapper.preview {
+.form-styling__wrapper.preview {
     animation: preview 1s ease forwards;
 }
 
@@ -55,7 +55,7 @@
     text-align: center;
 }
 
-.form-inputs-wrapper {
+.form-inputs__container {
     display: flex;
     flex-direction: column;
     row-gap: 12px;
@@ -195,7 +195,7 @@
     cursor:pointer;
 }
 
-.preview-reservation {
+.preview-reservation__container {
     margin: 0px auto;
     padding: 40px 30px;
     background-color: #0C120C;
@@ -218,12 +218,12 @@
     }
 }
 
-.preview-reservation p {
+.preview-reservation__container p {
     text-align: center;
     width: 100%;
 }
 
-.preview-reservation p span {
+.preview-reservation__container p span {
     font-weight: bold;
     text-decoration: underline;
 }
@@ -231,12 +231,12 @@
 
 
 @media screen and (min-width: 1025px) {
-    .form-styling-wrapper {
-        margin: 80px 0px 140px;
+    .form-styling__wrapper {
+        margin-bottom: 140px;
         scroll-margin-top: 340px;
     }
     
-    .form-styling-wrapper.preview {
+    .form-styling__wrapper.preview {
         animation: preview 2s ease forwards;
     }
     
@@ -250,7 +250,7 @@
         }
     }
     
-    .form-inputs-wrapper {
+    .form-inputs__container {
         flex-direction: row;
         row-gap: 0px;
         column-gap: 20px;
@@ -273,7 +273,7 @@
     }
 
 
-    .preview-reservation p br {
+    .preview-reservation__container p br {
         display: none;
     }
     
