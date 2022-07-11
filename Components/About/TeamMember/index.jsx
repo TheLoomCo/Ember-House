@@ -8,7 +8,7 @@ const TeamMember = ({ member, image }) => {
                 src={`${image}`}
                 height={200}
                 width={200}
-
+                alt="Ember House Team Member"
                 className='team-member__image' />
             <pre>{member}</pre>
         </div>

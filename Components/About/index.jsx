@@ -16,6 +16,7 @@ const AboutComp = () => {
             <div className='image__wrapper'>
                 <Image
                     className='about-primary__img'
+                    alt="Ember House"
                     src="/images/about/about-img.png"
                     height={479}
                     width={850}

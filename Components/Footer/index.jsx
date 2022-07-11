@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Image from 'next/image'
 
 const Footer = () => {
     const [email, setEmail] = useState("")
@@ -26,7 +27,10 @@ const Footer = () => {
                 <h2>Contact Us</h2>
                 <div className='footer-content__container'>
                     <div className='footer-content__business-location-info'>
-                        <img src="/webp/map.webp" alt="map" />
+                        <Image src="/webp/map.webp" alt="map"
+                            height={200}
+                            width={200}
+                        />
                         <div>
                             <p className='business-title'>
                                 Ember House
@@ -50,7 +54,7 @@ const Footer = () => {
                         </form>
                     </div>
                     <div className='footer-content__business-hours'>
-                        <h4>Hours of Operation:</h4>
+                        <h3>Hours of Operation:</h3>
 
                         <div>
                             <p className='day'>Monday - Friday</p>
