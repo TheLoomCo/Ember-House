@@ -1,0 +1,106 @@
+/* This styling is for Components/About/index.jsx */
+
+.about-comp__wrapper {
+    padding: 0px 10px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.restaurant__heading {
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-family: 'Montserrat';
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+.restaurant__biography {
+    color: #fff;
+    width: 98%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.about-comp__wrapper .image__wrapper {
+    margin: 30px 0px 20px;
+}
+
+.about-primary__img {
+    border-radius: 16px;
+}
+
+.meet-our-team__btn {
+    width: 200px;
+    padding: 12px 0px;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 40px auto;
+    border-radius: 12px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+}
+
+.meet-our-team__btn.btn__hide {
+    display: none;
+}
+
+@media screen and (min-width: 1025px) {
+    .about-comp__wrapper {
+        padding: 0px 0px 80px;
+    }
+    
+    .restaurant__biography {
+        width: 800px;
+    }
+    
+    .meet-our-team__btn.btn__hide {
+        display: none;
+    }
+    
+    .meet-our-team__btn::before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        bottom: 0px;
+        background: linear-gradient(to right, #BB4604, #FF0D39);
+        z-index: -1;
+        background-size: 0%;
+        transition: all 1s ease;
+        background-repeat: no-repeat;
+        background-position: left;
+        border-radius: 12px 0px 0px 12px;
+    }
+    .meet-our-team__btn::after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: 0px;
+        width: 50%;
+        bottom: 0px;
+        background: linear-gradient(to left, #BB4604, #FF0D39);
+        z-index: -1;
+        background-size: 0%;
+        transition: all 1.2s ease;
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: 0px 12px 12px 0px;
+    }
+    
+    
+    .meet-our-team__btn:hover::before {
+         background-size: 150%;
+         background-position: right;
+    }
+    
+    .meet-our-team__btn:hover::after {
+        background-size: 150%;
+        background-position: left;
+    }
+}

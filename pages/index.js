@@ -3,7 +3,7 @@ import Footer from '../Components/Footer'
 import GrillandChill from '../Components/GrillandChill'
 import HeroSection from '../Components/Hero'
 import Reservation from '../Components/Reservation'
-
+import AboutComp from '../Components/About'
 export default function Home() {
   return (
     <>
@@ -14,9 +14,10 @@ export default function Home() {
       </Head>
 
       {/* Home Page */}
-      <HeroSection />
+      <HeroSection title="Ember House" cta="Reserve Your Seat!" />
       <GrillandChill />
       <Reservation />
+      <AboutComp />
       <Footer />
     </>
   )

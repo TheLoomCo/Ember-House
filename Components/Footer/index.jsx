@@ -43,7 +43,7 @@ const Footer = () => {
                     <div className='newsletter'>
                         <form>
                             <fieldset>
-                                <label htmlFor='email'>Signup for our Newsletter</label>
+                                <label htmlFor='email'>Sign Up for our Newsletter</label>
                                 <input id="email" type="email" placeholder='Stay up to date!' value={email} onChange={(e) => setEmail(e.target.value)} />
                             </fieldset>
                             <button type="submit" value={email} onClick={(e) => handleSignup(e)}>Sign Up!</button>

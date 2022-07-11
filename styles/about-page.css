@@ -1,0 +1,45 @@
+/* This styling is for pages/about.js */
+
+.about-page__wrapper {
+    padding: 20px 10px 60px;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.about-page__wrapper .restaurant__heading {
+    margin: 20px 0px;
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-family: 'Montserrat';
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+.team__heading {
+    margin: 80px 0 30px;
+    font-size: clamp(2rem, 8vw, 4rem);
+    font-family: 'Montserrat';
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+
+.team-members__wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    align-content: center;
+    justify-items: center;
+    gap: 50px;
+}
+
+@media screen and (min-width: 1025px) {
+    .about-page__wrapper {
+        padding-top: 40px;
+    }
+
+    .team-members__wrapper {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

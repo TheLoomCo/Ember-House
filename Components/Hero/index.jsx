@@ -1,7 +1,7 @@
 import React from 'react'
 import Navigation from '../Navigation'
 
-const HeroSection = () => {
+const HeroSection = ({ title, cta }) => {
     return (
         <section id="heroSection" className="hero-section">
             <div className="parallax"></div>
@@ -9,8 +9,8 @@ const HeroSection = () => {
             <div className="overlay"></div>
             <Navigation />
             <div className="hero-cta">
-                <h1>Ember House</h1>
-                <a href="#reservation">Reserve Your Seat!</a>
+                <h1>{title}</h1>
+                <a href="#reservation">{cta}</a>
             </div>
         </section>
     )

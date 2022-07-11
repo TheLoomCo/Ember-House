@@ -30,9 +30,9 @@ const Navigation = () => {
     }
 
     return (
-        <div className={clientWindowHeight > 50 ? 'navbar-style-wrapper background-fill' : 'navbar-style-wrapper'}>
+        <div className={clientWindowHeight > 50 ? 'navbar-style__wrapper background-fill' : 'navbar-style__wrapper'}>
             <nav id="navigation" className="navbar">
-                <div className={clientWindowHeight > 50 ? 'nav-communication-container color-black' : 'nav-communication-container'}>
+                <div className={clientWindowHeight > 50 ? 'nav-communication__container color-black' : 'nav-communication__container'}>
                     <div className='nav-phone'>
                         <BsTelephoneFill />
                         <span>(123)-456-7890</span>
@@ -40,14 +40,15 @@ const Navigation = () => {
 
 
                     <Link href="/">
-                        <a className="nav-logo-large-screen">
-                            <img className="nav-logo-large-screen" src={clientWindowHeight > 50 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" width="150" height="70" />
+                        <a className="nav-logo__desktop">
+                            {/* <img className="nav-logo__desktop" src={clientWindowHeight > 50 ? '/logo-black.png' : '/logo-white.png'} alt="Ember House" width="150" height="70" /> */}
+                            <img className="nav-logo__desktop" src='/logo-white.png' alt="Ember House" width="150" height="70" />
                         </a>
                     </Link>
 
                     <Link href="/">
-                        <a className="nav-logo-small-screen">
-                            <img className="nav-logo-small-screen" src='/logo-white.png' alt="Ember House" width="150" height="80" />
+                        <a className="nav-logo__mobile">
+                            <img className="nav-logo__mobile" src='/logo-white.png' alt="Ember House" width="150" height="80" />
                         </a>
                     </Link>
 
