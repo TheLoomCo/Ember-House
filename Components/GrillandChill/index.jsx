@@ -49,7 +49,7 @@ const GrillandChill = () => {
                 category === "hors d'oeuvres & entrees" && (
                     <div id="entrees" className='menu-preview'>
                         <h2>Hors D'oeuvres & Entrees</h2>
-                        <a onClick={handleDownload} href="/" download="Hors D'ouevres and Entrees"><img src="/images/menu/hors-doeuvres-entrees.webp" alt="Hors D'ouevres and Entrees" height="1000" width="773" /></a>
+                        <img src="/images/menu/hors-doeuvres-entrees.webp" alt="Hors D'ouevres and Entrees" height="1000" width="773" />
                     </div>
                 )
             }
@@ -58,7 +58,7 @@ const GrillandChill = () => {
                 category === "desserts and sides" && (
                     <div id="desserts" className='menu-preview'>
                         <h2>Desserts & Sides</h2>
-                        <a href="/" download="Dessert and Sides"><img src="/images/menu/desserts-sides.webp" alt="Desserts and Sides" height="1000" width="773" /></a>
+                        <img src="/images/menu/desserts-sides.webp" alt="Desserts and Sides" height="1000" width="773" />
                     </div>
                 )
             }
@@ -66,7 +66,7 @@ const GrillandChill = () => {
                 category === "drinks / cocktails / wines" && (
                     <div id="drinks" className='menu-preview'>
                         <h2>Drinks / Cocktails / Wines</h2>
-                        <a href="/" download="Drinks"><img src="/images/menu/drinks.webp" alt="Drinks, Cocktails, & Wine" height="1000" width="773" /></a>
+                        <img src="/images/menu/drinks.webp" alt="Drinks, Cocktails, & Wine" height="1000" width="773" />
                     </div>
                 )
             }
