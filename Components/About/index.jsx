@@ -25,7 +25,7 @@ const AboutComp = () => {
                 Ember House was started by Marla and Gregg Ember, as a side business and passion project. Their main focus was on their other businesses in the tech and design fields but what they truly loved to do was cook. They would take their delicious offerings to markets and events where they would regularly sell out. Ultimately, the Husband - Wife team decided to chase their dream full time and opened Ember House in 2019.
             </p>
 
-            <Link href="/about"><a className={aboutPage ? 'meet-our-team__btn btn__hide' : 'meet-our-team__btn'}>Meet Our Team</a></Link>
+            <Link href="/about#meetTheTeam"><a className={aboutPage ? 'meet-our-team__btn btn__hide' : 'meet-our-team__btn'}>Meet Our Team</a></Link>
         </div>
     )
 }

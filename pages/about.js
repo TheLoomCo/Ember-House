@@ -11,7 +11,7 @@ const About = () => {
             <HeroSection title="About Us" />
             <main className='about-page__wrapper'>
                 <AboutComp />
-                <h2 className='team__heading'>The Team</h2>
+                <h2 id="meetTheTeam" className='team__heading'>The Team</h2>
                 <div className='team__wrapper'>
                     <div className='team-members__wrapper'>
                         <TeamMember
