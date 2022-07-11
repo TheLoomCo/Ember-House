@@ -7,7 +7,7 @@
 footer {
     padding: 40px 10px;
     max-width: 1800px;
-    margin: 0px auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     row-gap: 50px;
@@ -15,21 +15,19 @@ footer {
 
 footer h2 {
     font-family: 'Montserrat';
-    font-size: clamp(2rem, 8vw, 4rem);
+    font-size: clamp(2.4rem, 8vw, 4rem);
     font-weight: 300;
     text-align: center;
 }
 
-.footer-content-container {
+.footer-content__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    row-gap: 40px;
+    row-gap: 60px;
 }
 
-.business-location-info {
-    margin-top: 20px;
+.footer-content__business-location-info {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -40,9 +38,7 @@ footer h2 {
     row-gap: 10px;
 }
 
-
-
-.footer-content-container img {
+.footer-content__business-location-info img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -50,11 +46,11 @@ footer h2 {
     box-shadow: 2px 2px 10px -2px #000;
 }
 
-.newsletter {
+.footer-content__newsletter {
     width: 200px;
 }
 
-.newsletter button {
+.footer-content__newsletter button {
     margin-top: 10px;
     padding: 8px 10px;
     width: auto;
@@ -65,48 +61,48 @@ footer h2 {
     background-color: transparent;
     font-family: 'OpenSauceSans';
     font-size: 0.9rem;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-fieldset {
+.footer-content__newsletter fieldset {
     display: flex;
     flex-direction: column;
     border: none;
     row-gap: 10px;
 }
 
-fieldset label {
+.footer-content__newsletter label {
     font-size: 0.97rem;
     line-height: 1.5;
 }
 
-fieldset input {
+.footer-content__newsletter input {
     padding: 8px;
     width: 100%;
     border-radius: 5px;
     border: none;
 }
 
-.business-hours {
+.footer-content__business-hours {
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px;
 }
 
-.business-hours h4 {
+.footer-content__business-hours h4 {
     font-weight: bold;
     font-size: 1.3rem;
 }
 
-.business-hours .day {
+.footer-content__business-hours .day {
     margin-bottom: 5px;
     font-size: 1.1rem;
     font-family: 'OpenSauceSans';
     font-weight: 500;
 }
 
-.business-hours .available-hours {
+.footer-content__business-hours .available-hours {
     font-size: 0.9rem;
 }
 
@@ -115,96 +111,106 @@ fieldset input {
     text-align: center;
 }
 
-@media screen and (min-width: 479px) {
-    footer {
-        border: 2px solid blue; 
-    }
-}
-
 @media screen and (min-width: 768px) {
-    footer {
-        border: 2px solid red;
+    .footer-content__container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-items: center;
+    }
+
+    .footer-content__container label {
+        font-size: 1.4rem;
+        letter-spacing: 0.5px;
+    }
+
+    .footer-content__container input {
+        font-size: 1rem;
+    }
+
+    .footer-content__newsletter {
+        width: 350px;
+        order: -1;
+        grid-column: span 2;
     }
 }
-
-
 
 @media screen and (min-width: 1025px) {
     footer {
         padding: 40px 10px;
     }
-    
+
     footer h2 {
         font-family: 'Montserrat';
         font-size: 4rem;
     }
-    
-    .footer-content-container {
+
+    .footer-content__container {
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
     }
-    
 
-    
-    .business-location-info {
-        margin-top: 0px;
+    .footer-content__business-location-info {
+        margin-top: 0;
         text-align: center;
         flex-direction: row;
         column-gap: 60px;
         font-size: 1.2rem;
     }
-    
-    .newsletter {
+
+    .footer-content__newsletter {
         width: 20%;
+        order: 0;
     }
-    
-    fieldset {
+
+    .footer-content__container fieldset {
         display: flex;
         flex-direction: column;
         border: none;
         row-gap: 10px;
     }
-    
-    fieldset label {
-        font-size: 1.2rem;
+
+    .footer-content__container label {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        letter-spacing: 0.5px;
     }
-    
-    fieldset input {
+
+    .footer-content__container input {
         padding: 8px;
         width: 100%;
     }
-    
-    .business-location-info p {
-        margin: 10px 0px;
+
+    .footer-content__business-location-info p {
+        margin: 10px 0;
     }
-    
-    .business-hours {
+
+    .footer-content__business-hours {
         display: flex;
         flex-direction: column;
         justify-content: center;
         row-gap: 20px;
-        padding-right: 40px;   
+        padding-right: 40px;
     }
-    
-    .business-hours h6 {
+
+    .footer-content__business-hours h6 {
         font-weight: bold;
         font-size: 1.3rem;
     }
-    
-    .business-hours .day {
+
+    .footer-content__business-hours .day {
         margin-bottom: 5px;
         font-size: 1.1rem;
         font-family: 'OpenSauceSans';
         font-weight: 500;
     }
-    
-    .business-hours .available-hours {
+
+    .footer-content__business-hours .available-hours {
         font-size: 0.9rem;
     }
 
-    .newsletter button  {
-
+    .footer-content__newsletter button {
         width: 100%;
-}
+    }
 }

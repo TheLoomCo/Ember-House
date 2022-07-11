@@ -8,7 +8,7 @@
 }
 
 .restaurant__heading {
-    font-size: clamp(2rem, 8vw, 4rem);
+    font-size: clamp(2rem, 10vw, 4rem);
     font-family: 'Montserrat';
     font-weight: 300;
     text-align: center;
@@ -28,6 +28,7 @@
 
 .about-comp__wrapper .image__wrapper {
     margin: 30px 0px 20px;
+    max-width: 500px;
 }
 
 .about-primary__img {

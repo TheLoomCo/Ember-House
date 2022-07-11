@@ -24,8 +24,8 @@ const Footer = () => {
         <div id="contact" className='footer__wrapper'>
             <footer>
                 <h2>Contact Us</h2>
-                <div className='footer-content-container'>
-                    <div className='business-location-info'>
+                <div className='footer-content__container'>
+                    <div className='footer-content__business-location-info'>
                         <img src="/webp/map.webp" alt="map" />
                         <div>
                             <p className='business-title'>
@@ -40,7 +40,7 @@ const Footer = () => {
                             </p>
                         </div>
                     </div>
-                    <div className='newsletter'>
+                    <div className='footer-content__newsletter'>
                         <form>
                             <fieldset>
                                 <label htmlFor='email'>Sign Up for our Newsletter</label>
@@ -49,7 +49,7 @@ const Footer = () => {
                             <button type="submit" value={email} onClick={(e) => handleSignup(e)}>Sign Up!</button>
                         </form>
                     </div>
-                    <div className='business-hours'>
+                    <div className='footer-content__business-hours'>
                         <h4>Hours of Operation:</h4>
 
                         <div>
