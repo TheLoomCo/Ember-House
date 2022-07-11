@@ -120,9 +120,11 @@
 }
 
 .trifecta__container {
+    /* padding: 20px 20px 30px; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 450px;
     width: 100%;
     box-shadow: 2px 2px 10px -2px #d9d9d916;
     background-color: #d9d9d916;
@@ -153,16 +155,18 @@
 
 @media screen and (min-width: 479px) {
     .trifecta__container {
-        max-width: 500px;
+        padding: 20px 20px 30px;
+        
     }
 
     .trifecta__container p {
+        margin-top: 20px;
         color: #fff;
         font-family: 'OpenSauceSans';
         max-width: 500px;
-        line-height: 1.8;
+        line-height: 2;
         letter-spacing: 0.8px;
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
 

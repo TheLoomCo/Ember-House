@@ -16,9 +16,7 @@
 
 
 @media screen and (min-width: 1025px) {
-    .form-styling__wrapper {
-        margin-bottom: 135px;
-    }
+   
 }
 
 .form-styling__wrapper.preview {
@@ -76,7 +74,7 @@
 
 .name .user-icon {
     position: absolute;
-    font-size: 1rem;
+    font-size: clamp(1rem, );
     color: #000;
     left: 10px;
 }
@@ -231,6 +229,7 @@
 
 
 @media screen and (min-width: 1025px) {
+
     .form-styling__wrapper {
         margin-bottom: 140px;
         scroll-margin-top: 340px;
