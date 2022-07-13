@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         {/* OG Image */}
-        <meta property="og:title" content="Ember house grille" />
+        <meta property="og:title" content="Ember House Grille" />
         <meta property="og:site_name" content="Ember House Grille" />
         <meta property="og:url" content="https://ember-house.vercel.app" />
         <meta property="og:description" content="Our kitchen is graced by some of the greatest Chefs in the world, creating unrivaled dishes for your dining pleasure." />
