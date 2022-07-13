@@ -14,7 +14,6 @@ const Navigation = () => {
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         window.addEventListener("resize", handleResize);
-        console.log(window.screen.availWidth)
         return () => {
             window.removeEventListener("scroll", handleScroll);
             window.removeEventListener("resize", handleResize);

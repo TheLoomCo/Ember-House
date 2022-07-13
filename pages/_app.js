@@ -18,12 +18,12 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         {/* OG Image */}
-        <meta property="og:title" content="Ember House" />
-        <meta property="og:site_name" content="Ember House" />
+        <meta property="og:title" content="Ember house grille" />
+        <meta property="og:site_name" content="Ember House Grille" />
         <meta property="og:url" content="https://ember-house.vercel.app" />
-        <meta property="og:description" content="" />
+        <meta property="og:description" content="Our kitchen is graced by some of the greatest Chefs in the world, creating unrivaled dishes for your dining pleasure." />
         <meta property="og:type" content="restaurant" />
-        <meta property="og:image" content="https://ember-house.vercel.app/logo-white.png" />
+        <meta property="og:image" content="https://res.cloudinary.com/aladd93/image/upload/v1657677581/Ember-House-Logo_1_pol38i.png" />
 
         {/* Favicon */}
 

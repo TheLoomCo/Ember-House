@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
+import Image from 'next/image';
 import { ButtonData } from './GrillandChillButtonData';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 
 const GrillandChill = () => {
 
@@ -17,9 +16,7 @@ const GrillandChill = () => {
         setMenuShow(true);
 
         router.push(button.id);
-
     }
-
 
     return (
         <motion.section
@@ -27,7 +24,7 @@ const GrillandChill = () => {
             transition={{ duration: 1 }}
             className="grill-and-chill__wrapper"
             id="menu">
-            <div className='grill-and-chill-headers'>
+            <div className='grill-and-chill__headers'>
                 <h2 className='text-gradient'>Grill and Chill</h2>
                 <h3>Come and see what <br /> Ember House has to offer!</h3>
             </div>

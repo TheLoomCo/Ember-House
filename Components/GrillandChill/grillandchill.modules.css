@@ -6,7 +6,7 @@
     padding: 40px 10px;
 }
 
-.grill-and-chill-headers {
+.grill-and-chill__headers {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
@@ -21,12 +21,12 @@
     scroll-margin-top: 120px;
 }
 
-.grill-and-chill-headers h2 {
+.grill-and-chill__headers h2 {
     font-size: clamp(2.2rem, 8vw, 4rem);
     font-weight: 400;
 }
 
-.grill-and-chill-headers h3 {
+.grill-and-chill__headers h3 {
     color: #fff;
     font-weight: 400;
     font-size: clamp(1.1rem, 4vw, 1.6rem);
@@ -218,15 +218,15 @@
         scroll-margin-top: 180px;
     }
 
-    .grill-and-chill-headers h2 {
+    .grill-and-chill__headers h2 {
         line-height: 0.8;
     }
 
-    .grill-and-chill-headers h3 {
+    .grill-and-chill__headers h3 {
         font-weight: 300;
     }
 
-    .grill-and-chill-headers h3 br {
+    .grill-and-chill__headers h3 br {
         display: none;
     }
 

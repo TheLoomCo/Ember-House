@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import Image from 'next/image'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
-import Image from 'next/image'
 
 const Footer = () => {
     const [email, setEmail] = useState("")
@@ -18,8 +18,8 @@ const Footer = () => {
             progress: undefined,
         });
 
-
         setEmail("");
+
     }
     return (
         <div id="contact" className='footer__wrapper'>
@@ -71,7 +71,14 @@ const Footer = () => {
                     </div>
                 </div>
                 <span className='copyright'>Copyright &copy; {new Date().getFullYear()} LoomCo & ALStudio</span>
-
+                <ToastContainer
+                    position="bottom-center"
+                    autoClose={3000}
+                    hideProgressBar={false}
+                    newestOnTop={false}
+                    closeOnClick
+                    rtl={false}
+                />
             </footer>
         </div>
     )

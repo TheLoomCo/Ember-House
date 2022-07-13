@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import React from 'react'
 import AboutComp from '../Components/About'
 import TeamMember from '../Components/About/TeamMember'

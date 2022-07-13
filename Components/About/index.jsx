@@ -7,9 +7,8 @@ const AboutComp = () => {
 
     const router = useRouter();
 
-    console.log(router);
-
     const aboutPage = router.pathname === '/about';
+
     return (
         <div id="about" className='about-comp__wrapper'>
             <h2 className='about-restaurant__heading'>The Restaurant</h2>
