@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import AboutComp from '../Components/About'
@@ -8,6 +9,11 @@ import HeroSection from '../Components/Hero'
 const About = () => {
     return (
         <>
+            <Head>
+                <meta name="description" content="Ember House was started by Marla and Gregg Ember, as a side business and passion project. Their main focus was on their other businesses in the tech and design fields but what they truly loved to do was cook." />
+                <link rel="icon" href="/favicon.ico" />
+                <title>Ember House | About</title>
+            </Head>
             <HeroSection title="About Us" />
             <main className='about-page__wrapper'>
                 <AboutComp />
